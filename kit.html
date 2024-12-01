@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystals Kit</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3); /* グラデーション背景 */
+            color: white;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 上に寄せる */
+            height: auto;
+            min-height: 100vh; /* 最低でも画面の高さ */
+            position: relative;
+            background-size: cover;
+            overflow-y: auto; /* スクロール可能に */
+        }
+
+        /* コンテナ全体 */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 40px; /* 上部の余白を調整 */
+        }
+
+        .column {
+            background-color: rgba(255, 255, 255, 0.8); /* 背景を半透明に */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
+            overflow-y: auto;  /* 内容が多い場合でもスクロールできるように */
+        }
+
+        .column h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2c3e50; /* カラムタイトルの下線 */
+        }
+
+        .item-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            margin: 8px 0;
+            padding: 6px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            color: black; /* アイテム名の文字色を黒に設定 */
+        }
+
+        /* レスポンシブ対応（画面が小さい時に縦並びに） */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .column {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kits</h1>
+    <div class="container">
+        <!-- 左のカラム -->
+        <div class="column">
+            <h2>Test Kits</h2>
+            <ul class="item-list">
+                <li>トーテム: 8</li>
+                <li>ネザライト装備</li>
+                <li>斧</li>
+                <li>クロスボウ</li>
+                <li>力のポーション</li>
+                <li>エンダーパール: 112</li>
+                <li>クリスタル: 192</li>
+                <li>エリトラ</li>
+                <li>スピードポーション</li>
+                <li>黒曜石: 192</li>
+                <li>花火: 64</li>
+                <li>エンチャント瓶: 192</li>
+                <li>矢 : 64</li>
+                <li>メイス</li>
+                <li>剣</li>
+                <li>鶴橋</li>
+                <li>りんご: 64</li>
+                <li>グロウストーン : 64</li>
+                <li>リスポーンアンカー : 64</li>
+                <li>盾</li>
+            </ul>
+        </div>
+
+        <!-- 真ん中のカラム -->
+        <div class="column">
+            <h2>10 Totem Kits</h2>
+            <ul class="item-list">
+                <li>トーテム: 10</li>
+                <li>ネザライト装備</li>
+                <li>斧</li>
+                <li>クロスボウ</li>
+                <li>エンダーパール: 576</li>
+                <li>クリスタル: 192</li>
+                <li>エリトラ</li>
+                <li>黒曜石: 192</li>
+                <li>花火: 64</li>
+                <li>エンチャント瓶: 192</li>
+                <li>矢 : 64</li>
+                <li>剣</li>
+                <li>鶴橋</li>
+                <li>りんご: 64</li>
+                <li>グロウストーン : 64</li>
+                <li>リスポーンアンカー : 64</li>
+                <li>盾</li>
+            </ul>
+        </div>
+
+        <!-- 一番右のカラム -->
+        <div class="column">
+            <h2>Normal Kits</h2>
+            <ul class="item-list">
+                <li>トーテム: 18</li>
+                <li>ネザライト装備</li>
+                <li>エンダーパール: 112</li>
+                <li>クリスタル: 192</li>
+                <li>黒曜石: 192</li>
+                <li>剣</li>
+                <li>鶴橋</li>
+                <li>りんご: 64</li>
+                <li>グロウストーン : 64</li>
+                <li>リスポーンアンカー : 64</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
