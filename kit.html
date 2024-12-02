@@ -9,36 +9,36 @@
             font-family: 'Noto Sans JP', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #6e8efb, #a777e3); /* グラデーション背景 */
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
             color: white;
             line-height: 1.6;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* 上に寄せる */
+            align-items: flex-start;
             height: auto;
-            min-height: 100vh; /* 最低でも画面の高さ */
+            min-height: 100vh;
             position: relative;
             background-size: cover;
-            overflow-y: auto; /* スクロール可能に */
+            overflow-y: auto;
         }
 
-        /* コンテナ全体 */
         .container {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap; /* 行を折り返せるようにする */
             width: 90%;
             max-width: 1200px;
-            margin-top: 40px; /* 上部の余白を調整 */
+            margin-top: 40px;
         }
 
         .column {
-            background-color: rgba(255, 255, 255, 0.8); /* 背景を半透明に */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
+            width: 22%; /* 4列に対応 */
             margin: 10px;
-            overflow-y: auto;  /* 内容が多い場合でもスクロールできるように */
+            overflow-y: auto;
         }
 
         .column h2 {
@@ -46,7 +46,7 @@
             color: #2c3e50;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #2c3e50; /* カラムタイトルの下線 */
+            border-bottom: 2px solid #2c3e50;
         }
 
         .item-list {
@@ -59,10 +59,9 @@
             padding: 6px;
             background-color: #f9f9f9;
             border-radius: 4px;
-            color: black; /* アイテム名の文字色を黒に設定 */
+            color: black;
         }
 
-        /* レスポンシブ対応（画面が小さい時に縦並びに） */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -84,7 +83,7 @@
             <h2>Test Kits</h2>
             <ul class="item-list">
                 <li>トーテム: 8</li>
-                <li>ネザライト (ヘッド, チェストプレート, レギンス, ブーツ)</li>
+                <li>ネザライト装備</li>
                 <li>斧</li>
                 <li>クロスボウ</li>
                 <li>力のポーション</li>
@@ -106,12 +105,12 @@
             </ul>
         </div>
 
-        <!-- 真ん中のカラム -->
+        <!-- 真ん中左のカラム -->
         <div class="column">
             <h2>10 Totem Kits</h2>
             <ul class="item-list">
                 <li>トーテム: 10</li>
-                <li>ネザライト(ヘッド, チェストプレート, レギンス, ブーツ)</li>
+                <li>ネザライト装備</li>
                 <li>斧</li>
                 <li>クロスボウ</li>
                 <li>エンダーパール: 576</li>
@@ -123,28 +122,51 @@
                 <li>矢 : 64</li>
                 <li>剣</li>
                 <li>鶴橋</li>
-                <li>金りんご: 64</li>
+                <li>りんご: 64</li>
                 <li>グロウストーン : 64</li>
                 <li>リスポーンアンカー : 64</li>
                 <li>盾</li>
             </ul>
         </div>
 
-        <!-- 一番右のカラム -->
+        <!-- 真ん中右のカラム -->
         <div class="column">
             <h2>Normal Kits</h2>
             <ul class="item-list">
                 <li>トーテム: 18</li>
-                <li>ネザライト(ヘッド, チェストプレート, レギンス, ブーツ)</li>
+                <li>ネザライト装備</li>
                 <li>エンダーパール: 112</li>
                 <li>クリスタル: 192</li>
                 <li>黒曜石: 192</li>
                 <li>剣</li>
                 <li>鶴橋</li>
-                <li>金りんご: 64</li>
+                <li>りんご: 64</li>
                 <li>グロウストーン : 64</li>
                 <li>リスポーンアンカー : 64</li>
             </ul>
+        </div>
+
+        <!-- 右のカラム -->
+        <div class="column">
+            <h2>初心者用Kit</h2>
+            <ul class="item-list">
+                <li>ネザライト装備 (フルセット)</li>
+                <li>トーテム: 17</li>
+                <li>黒曜石: 256</li>
+                <li>クリスタル: 256</li>
+                <li>エリトラ</li>
+                <li>エンダーパール: 112</li>
+                <li>花火: 1</li>
+                <li>矢: 172(落下速度低下 64 , 移動速度低下 64 , 弱体化 64)</li>
+                <li>金リンゴ: 64</li>
+                <li>剣</li>
+                <li>斧</li>
+                <li>メイス</li>
+                <li>リスポーンアンカー : 172</li>
+                <li>グロウストーン : 172</li>
+                <li>つるはし</li>
+                <li>エンチャント瓶</li>
+                        </ul>
         </div>
     </div>
 </body>
